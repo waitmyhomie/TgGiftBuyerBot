@@ -25,37 +25,10 @@ class GiftsApi:
             async with session.get(url) as resp:
                 data = await resp.json()
                 
-                # Сохраняем полный JSON в файл для изучения
-                timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-                json_filename = f"logs/gifts_response_{timestamp}.json"
-                
-                try:
-                    with open(json_filename, 'w', encoding='utf-8') as f:
-                        json.dump(data, f, indent=2, ensure_ascii=False)
-                    log.info(f"Full JSON response saved to: {json_filename}")
-                except Exception as e:
-                    log.error(f"Failed to save JSON to file: {e}")
-                
-                # Красиво форматируем и логируем JSON
-                formatted_json = json.dumps(data, indent=2, ensure_ascii=False)
-                log.info(f"Full API response:\n{formatted_json}")
-                
                 if data.get('ok') is True:
                     gifts = data.get('result', {}).get('gifts', [])
-                    
-                    # Детальное логирование каждого подарка
-                    log.info(f"Total gifts found: {len(gifts)}")
-                    for idx, gift in enumerate(gifts):
-                        log.info(
-                            f"\n--- Gift #{idx + 1} ---\n"
-                            f"ID: {gift.get('id')}\n"
-                            f"Price: {gift.get('star_count')}⭐\n"
-                            f"Remaining: {gift.get('remaining_count', 'Unlimited')}\n"
-                            f"Total: {gift.get('total_count', 'Unlimited')}\n"
-                            f"Sticker emoji: {gift.get('sticker', {}).get('emoji', 'N/A')}\n"
-                            f"Full gift data: {json.dumps(gift, indent=2, ensure_ascii=False)}"
-                        )
-                    
+                    # Простое логирование только количества
+                    log.debug(f"Fetched {len(gifts)} gifts from API")
                     return gifts
                 else:
                     log.error(f"API response error: {data}")
