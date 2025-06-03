@@ -61,6 +61,8 @@ async def auto_buy_command(message: types.Message, state: FSMContext, db_session
                 f"From {settings.price_limit_from} to {settings.price_limit_to} ⭐️\n\n"
                 f"<b>Supply Limit:</b> {settings.supply_limit or 'not set'} ⭐️\n"
                 f"<b>Purchase Cycles:</b> {settings.cycles}\n"
+                f"<b>Excluded gifts:</b> 5782984811920491178\n\n"
+                f"<i>💡 Покупаются все подарки кроме исключенных</i>"
             ),
             reply_markup=auto_buy_keyboard(),
             parse_mode="HTML"
@@ -90,7 +92,9 @@ async def display_updated_settings(message: types.Message, db_session, settings:
                 f"<b>Price Limit:</b>\n"
                 f"From {settings.price_limit_from} to {settings.price_limit_to} ⭐️\n\n"
                 f"<b>Supply Limit:</b> {settings.supply_limit or 'not set'} ⭐️\n"
-                f"<b>Purchase Cycles:</b> {settings.cycles}"
+                f"<b>Purchase Cycles:</b> {settings.cycles}\n"
+                f"<b>Excluded gifts:</b> 5782984811920491178\n\n"
+                f"<i>💡 Покупаются все подарки кроме исключенных</i>"
             ),
             reply_markup=auto_buy_keyboard(),
             parse_mode="HTML"
@@ -134,7 +138,14 @@ async def auto_buy_menu_handler(message: types.Message, state: FSMContext, db_se
 
         elif message.text == "✏️ Number of Cycles":
             await message.answer(
-                text="<b>Enter number of cycles (e.g., 2)</b>\nEach cycle allows purchasing a set number of gifts (e.g., 3 cycles with 2 gifts per cycle will purchase 6 gifts total).\nPress '🔙 Back to Main Menu' to cancel.",
+                text=(
+                    "<b>Enter number of cycles (e.g., 2)</b>\n"
+                    "Каждый цикл - это полный проход по всем новым подаркам.\n"
+                    "Если после первого цикла появятся новые подарки или останется баланс, "
+                    "бот сделает еще один проход.\n\n"
+                    "Рекомендуется: 1-3 цикла\n"
+                    "Press '🔙 Back to Main Menu' to cancel."
+                ),
                 reply_markup=go_back_menu(),
                 parse_mode="HTML"
             )
