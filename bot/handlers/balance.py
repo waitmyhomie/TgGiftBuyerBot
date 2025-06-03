@@ -5,10 +5,10 @@ from aiogram.filters import Command, StateFilter, CommandObject
 from aiogram.fsm.context import FSMContext
 
 from api.gifts import GiftsApi
+from bot.keyboards.inline import payment_keyboard
 from utils.logger import log
 from bot.states.deposit_state import DepositStates
 from bot.keyboards.default import balance_menu, main_menu, go_back_menu
-from bot.keyboards.inline import payment_keyboard
 from db.models import User, Transaction
 
 router = Router()
@@ -256,99 +256,3 @@ async def process_deposit_payment(message: types.Message, db_session, payment_in
     except Exception as e:
         log.error(f"Deposit processing error: {e}")
         await message.reply("Error processing your deposit. Please try again later.")
-
-
-@log.catch
-@router.message(Command("refund"))
-async def command_refund_handler(message: types.Message, bot: Bot, command: CommandObject, db_session) -> None:
-    """
-    Handle refund command for administrators.
-
-    Args:
-        message: Incoming message object
-        bot: Bot instance for API calls
-        command: Parsed command object with arguments
-        db_session: Database session
-
-    Workflow:
-        1. Verify admin privileges
-        2. Validate transaction exists
-        3. Process refund via Telegram API
-        4. Update database records
-        5. Confirm completion
-
-    Error Handling:
-        - Detailed error logging
-        - User-friendly error messages
-    """
-    transaction_id = command.args
-    if not transaction_id:
-        await message.reply("Please specify transaction ID for refund.")
-        return
-
-    try:
-        with db_session as db:
-            admin_user = db.query(User).filter(
-                User.user_id == message.from_user.id).first()
-            if not admin_user or admin_user.status != "admin":
-                await message.reply("You don't have permission to execute this command.")
-                return
-
-            transaction = db.query(Transaction).filter(
-                Transaction.telegram_payment_charge_id == transaction_id
-            ).first()
-
-            if not transaction:
-                await message.reply("Transaction not found. Please check ID and try again.")
-                return
-
-            if transaction.status == "refunded":
-                await message.reply("Funds for this transaction were already refunded.")
-                return
-
-            user = db.query(User).filter(
-                User.user_id == transaction.user_id).first()
-            if not user:
-                await message.reply("User associated with transaction not found.")
-                return
-
-            refund_amount = transaction.amount
-            target_user_id = transaction.user_id
-
-        try:
-            result = await bot.refund_star_payment(
-                user_id=target_user_id,
-                telegram_payment_charge_id=transaction_id
-            )
-            log.debug(result)
-        except Exception as e:
-            log.error(f"Error processing refund via Telegram API: {e}")
-            await message.reply("Refund processing via Telegram API failed, please contact support.")
-            return
-
-        with db_session as db:
-            transaction = db.query(Transaction).filter(
-                Transaction.telegram_payment_charge_id == transaction_id
-            ).first()
-
-            if not transaction:
-                await message.reply("Failed to find transaction for update. Please contact support.")
-                return
-
-            user = db.query(User).filter(
-                User.user_id == transaction.user_id).first()
-            if not user:
-                await message.reply("Failed to find user for balance update. Please contact support.")
-                return
-
-            transaction.status = "refunded"
-            user.balance -= refund_amount
-            db.commit()
-
-        await message.reply(
-            f"Refund for transaction ID: {transaction_id} processed successfully. Refund amount: {refund_amount}⭐️."
-        )
-
-    except Exception as e:
-        log.error(f"Refund processing error: {e}")
-        await message.reply(f"Error processing refund: {e}")
