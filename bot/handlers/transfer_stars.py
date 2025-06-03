@@ -38,9 +38,8 @@ async def transfer_stars_command(message: types.Message, command: CommandObject,
         if not command.args:
             await message.reply(
                 "❌ Please specify user ID and amount.\n"
-                "Usage: `/transfer <user_id> <amount>`\n"
-                "Example: `/transfer 123456789 100`",
-                parse_mode="Markdown"
+                "Usage: /transfer <user_id> <amount>\n"
+                "Example: /transfer 123456789 100"
             )
             return
         
@@ -48,8 +47,7 @@ async def transfer_stars_command(message: types.Message, command: CommandObject,
         if len(args) != 2:
             await message.reply(
                 "❌ Invalid format.\n"
-                "Usage: `/transfer <user_id> <amount>`",
-                parse_mode="Markdown"
+                "Usage: /transfer <user_id> <amount>"
             )
             return
         
@@ -94,11 +92,10 @@ async def transfer_stars_command(message: types.Message, command: CommandObject,
             
             # Отправляем подтверждение
             await message.reply(
-                f"✅ Successfully transferred {amount}⭐ to user {target_user.username}\n"
+                f"✅ Successfully transferred {amount}⭐ to user ID: {target_user_id}\n"
+                f"• Username: {target_user.username}\n"
                 f"• Old balance: {old_balance}⭐\n"
-                f"• New balance: {target_user.balance}⭐\n"
-                f"• Transaction ID: {transaction.telegram_payment_charge_id}",
-                parse_mode="Markdown"
+                f"• New balance: {target_user.balance}⭐"
             )
             
             # Уведомляем пользователя о получении звезд
@@ -134,8 +131,7 @@ async def give_admin_command(message: types.Message, command: CommandObject, db_
     if not command.args:
         await message.reply(
             "❌ Please specify user ID.\n"
-            "Usage: `/give_admin <user_id>`",
-            parse_mode="Markdown"
+            "Usage: /give_admin <user_id>"
         )
         return
     
@@ -153,14 +149,15 @@ async def give_admin_command(message: types.Message, command: CommandObject, db_
             return
         
         if user.status == "admin":
-            await message.reply(f"ℹ️ User {user.username} is already an admin.")
+            await message.reply(f"ℹ️ User ID {target_user_id} is already an admin.")
             return
         
         user.status = "admin"
         db.commit()
         
         await message.reply(
-            f"✅ Successfully granted admin rights to {user.username}!"
+            f"✅ Successfully granted admin rights to user ID: {target_user_id}\n"
+            f"Username: {user.username}"
         )
         
         # Уведомляем пользователя
@@ -196,8 +193,9 @@ async def list_admins_command(message: types.Message, db_session):
             await message.reply("📋 No administrators found.")
             return
         
-        admin_list = "👥 **Administrators:**\n\n"
+        admin_list = "👥 Administrators:\n\n"
         for admin in admins:
-            admin_list += f"• {admin.username} (ID: {admin.user_id})\n"
+            # Используем ID вместо username для избежания проблем с форматированием
+            admin_list += f"• ID: {admin.user_id} (@{admin.username})\n"
         
-        await message.reply(admin_list, parse_mode="Markdown")
+        await message.reply(admin_list)
