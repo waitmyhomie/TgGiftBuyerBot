@@ -236,7 +236,12 @@ async def process_deposit_payment(message: types.Message, db_session, payment_in
             if not user:
                 raise ValueError("User not found.")
 
+            # Сохраняем старый баланс
+            old_balance = user.balance
+            
+            # Обновляем баланс
             user.balance += amount
+            new_balance = user.balance
 
             transaction = Transaction(
                 user_id=user_id,
@@ -251,13 +256,16 @@ async def process_deposit_payment(message: types.Message, db_session, payment_in
             
             # Обновляем объект транзакции чтобы получить ID
             db.refresh(transaction)
+            transaction_id = transaction.id
 
         # ИСПРАВЛЕНИЕ: Показываем ID транзакции при пополнении
+        # Используем сохраненные значения вместо объектов из закрытой сессии
         await message.reply(
             f"✅ Deposit successful!\n\n"
             f"• Amount: {amount}⭐️\n"
-            f"• New balance: {user.balance}⭐️\n"
-            f"• Transaction ID: #{transaction.id}\n"
+            f"• Old balance: {old_balance}⭐️\n"
+            f"• New balance: {new_balance}⭐️\n"
+            f"• Transaction ID: #{transaction_id}\n"
             f"• Payment ID: `{payment_info.telegram_payment_charge_id}`",
             reply_markup=main_menu(),
             parse_mode="Markdown"
