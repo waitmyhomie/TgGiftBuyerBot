@@ -3827,3 +3827,925 @@
 2025-06-03 17:14:46 | DEBUG | gift_parser:start_gift_parsing_loop:174 - Cycle 1/1 for user 1487757625
 2025-06-03 17:14:47 | INFO | logger:emit:13 - Polling stopped
 2025-06-03 17:14:47 | INFO | logger:emit:13 - Polling stopped for bot @wladikwanna_bot id=7820577888 - 'wladikwannabot'
+2025-06-03 17:24:39 | INFO | main:main:39 - Starting bot...
+2025-06-03 17:24:39 | INFO | main:on_startup:26 - Initializing database...
+2025-06-03 17:24:39 | INFO | main:on_startup:28 - Database initialized successfully
+2025-06-03 17:24:39 | INFO | main:on_startup:31 - Starting gift parsing loop...
+2025-06-03 17:24:39 | INFO | logger:emit:13 - Start polling
+2025-06-03 17:24:40 | INFO | logger:emit:13 - Run polling for bot @wladikwanna_bot id=7820577888 - 'wladikwannabot'
+2025-06-03 17:24:40 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 17:24:40 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 17:24:40 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=91627/500000
+2025-06-03 17:24:40 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 17:24:40 | INFO | gift_parser:start_gift_parsing_loop:243 - 👥 Found 1 users with autobuy enabled
+2025-06-03 17:24:40 | INFO | gift_parser:start_gift_parsing_loop:258 - 🔄 Цикл 1/1 для пользователя 1487757625
+2025-06-03 17:24:43 | INFO | logger:emit:13 - Polling stopped
+2025-06-03 17:24:43 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 17:24:43 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 17:24:43 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=91629/500000
+2025-06-03 17:24:43 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 17:24:43 | INFO | gift_parser:start_gift_parsing_loop:243 - 👥 Found 1 users with autobuy enabled
+2025-06-03 17:24:43 | INFO | gift_parser:start_gift_parsing_loop:258 - 🔄 Цикл 1/1 для пользователя 1487757625
+2025-06-03 17:24:43 | INFO | logger:emit:13 - Polling stopped for bot @wladikwanna_bot id=7820577888 - 'wladikwannabot'
+2025-06-03 17:24:48 | INFO | main:main:39 - Starting bot...
+2025-06-03 17:24:48 | INFO | main:on_startup:26 - Initializing database...
+2025-06-03 17:24:48 | INFO | main:on_startup:28 - Database initialized successfully
+2025-06-03 17:24:48 | INFO | main:on_startup:31 - Starting gift parsing loop...
+2025-06-03 17:24:48 | INFO | logger:emit:13 - Start polling
+2025-06-03 17:24:48 | INFO | logger:emit:13 - Run polling for bot @wladikwanna_bot id=7820577888 - 'wladikwannabot'
+2025-06-03 17:24:48 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 17:24:48 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 17:24:48 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 17:24:48 | INFO | gift_parser:start_gift_parsing_loop:243 - 👥 Found 1 users with autobuy enabled
+2025-06-03 17:24:48 | INFO | gift_parser:start_gift_parsing_loop:258 - 🔄 Цикл 1/1 для пользователя 1487757625
+2025-06-03 17:24:51 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 17:24:51 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 17:24:51 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=91626/500000
+2025-06-03 17:24:51 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 17:24:51 | INFO | gift_parser:start_gift_parsing_loop:243 - 👥 Found 1 users with autobuy enabled
+2025-06-03 17:24:51 | INFO | gift_parser:start_gift_parsing_loop:258 - 🔄 Цикл 1/1 для пользователя 1487757625
+2025-06-03 17:24:51 | INFO | logger:emit:13 - Polling stopped
+2025-06-03 17:24:52 | INFO | logger:emit:13 - Polling stopped for bot @wladikwanna_bot id=7820577888 - 'wladikwannabot'
+2025-06-03 21:02:30 | INFO | main:main:39 - Starting bot...
+2025-06-03 21:02:30 | INFO | main:on_startup:26 - Initializing database...
+2025-06-03 21:02:30 | INFO | main:on_startup:28 - Database initialized successfully
+2025-06-03 21:02:30 | INFO | main:on_startup:31 - Starting gift parsing loop...
+2025-06-03 21:02:33 | INFO | logger:emit:13 - Start polling
+2025-06-03 21:02:33 | INFO | logger:emit:13 - Run polling for bot @LabAutoBuyBot id=7761082242 - 'Лаборатория АвтоБай подарков'
+2025-06-03 21:02:33 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:33 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:33 | INFO | gift_parser:start_gift_parsing_loop:229 - 🆕 Added new LIMITED gift: 5782984811920491178 (350⭐, 90602/500000)
+2025-06-03 21:02:34 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:37 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:37 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:37 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:40 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:40 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:40 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:43 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:43 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:43 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:46 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:46 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:46 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90600/500000
+2025-06-03 21:02:46 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:50 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:50 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:50 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90602/500000
+2025-06-03 21:02:50 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:53 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:53 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:53 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:02:53 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:56 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:56 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:56 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90601/500000
+2025-06-03 21:02:56 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:02:59 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:02:59 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:02:59 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:02:59 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:03 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:03 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:03 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:06 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:06 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:06 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90600/500000
+2025-06-03 21:03:06 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:09 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:09 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:09 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:03:09 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:12 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:12 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:12 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:16 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:16 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:16 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90601/500000
+2025-06-03 21:03:16 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:19 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:19 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:19 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90600/500000
+2025-06-03 21:03:19 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:22 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:22 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:22 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90601/500000
+2025-06-03 21:03:22 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:25 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:25 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:25 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:03:25 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:29 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:29 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:29 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:32 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:32 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:32 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:35 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:35 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:35 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90600/500000
+2025-06-03 21:03:35 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:38 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:38 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:38 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:42 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:42 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:42 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:03:42 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:45 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:45 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:45 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90598/500000
+2025-06-03 21:03:45 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:48 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:48 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:48 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:51 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:51 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:51 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:54 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:54 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:54 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:03:58 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:03:58 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:03:58 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:01 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:01 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:01 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:04 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:04 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:04 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:07 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:07 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:07 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:11 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:11 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:11 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:14 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:14 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:14 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90599/500000
+2025-06-03 21:04:14 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:17 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:17 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:17 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90598/500000
+2025-06-03 21:04:17 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:20 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:20 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:20 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:23 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:23 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:23 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:27 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:27 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:27 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:30 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:30 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:30 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:33 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:33 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:33 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:36 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:36 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:36 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:40 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:40 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:40 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90597/500000
+2025-06-03 21:04:40 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:43 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:43 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:43 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:46 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:46 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:46 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:49 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:49 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:49 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:53 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:53 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:53 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:56 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:56 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:56 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90598/500000
+2025-06-03 21:04:56 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:04:59 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:04:59 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:04:59 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90597/500000
+2025-06-03 21:04:59 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:02 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:02 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:02 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90598/500000
+2025-06-03 21:05:02 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:06 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:06 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:06 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90597/500000
+2025-06-03 21:05:06 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:09 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:09 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:09 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:12 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:12 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:12 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:15 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:15 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:15 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90596/500000
+2025-06-03 21:05:15 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:19 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:19 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:19 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90597/500000
+2025-06-03 21:05:19 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:22 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:22 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:22 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:25 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:25 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:25 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:28 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:28 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:28 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90596/500000
+2025-06-03 21:05:28 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:31 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:31 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:31 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:35 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:35 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:35 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90597/500000
+2025-06-03 21:05:35 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:38 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:38 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:38 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:05:38 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:41 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:41 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:41 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90596/500000
+2025-06-03 21:05:41 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:45 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:45 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:45 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:48 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:48 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:48 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:05:48 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:51 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:51 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:51 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90595/500000
+2025-06-03 21:05:51 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:54 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:54 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:54 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90596/500000
+2025-06-03 21:05:54 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:05:58 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:05:58 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:05:58 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:05:58 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:01 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:01 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:01 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:04 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:04 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:04 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:04 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:07 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:07 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:07 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:06:07 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:11 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:11 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:11 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:11 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:14 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:14 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:14 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:06:14 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:17 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:17 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:17 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:17 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:20 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:20 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:20 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:23 | INFO | logger:emit:13 - Update id=661233819 is handled. Duration 141 ms by bot id=7761082242
+2025-06-03 21:06:24 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:24 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:24 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90594/500000
+2025-06-03 21:06:24 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:24 | INFO | logger:emit:13 - Update id=661233820 is handled. Duration 78 ms by bot id=7761082242
+2025-06-03 21:06:27 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:27 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:27 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:27 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:28 | INFO | logger:emit:13 - Update id=661233821 is handled. Duration 156 ms by bot id=7761082242
+2025-06-03 21:06:29 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:29 | INFO | buy_gift:fetch_gifts_list:53 - Filtered gifts: 1 limited out of 12 total
+2025-06-03 21:06:29 | INFO | logger:emit:13 - Update id=661233822 is handled. Duration 671 ms by bot id=7761082242
+2025-06-03 21:06:30 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:30 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:30 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:33 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:33 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:33 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90589/500000
+2025-06-03 21:06:33 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:36 | INFO | logger:emit:13 - Update id=661233823 is handled. Duration 203 ms by bot id=7761082242
+2025-06-03 21:06:36 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:36 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:36 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:37 | INFO | logger:emit:13 - Update id=661233824 is handled. Duration 77 ms by bot id=7761082242
+2025-06-03 21:06:39 | INFO | logger:emit:13 - Update id=661233825 is handled. Duration 62 ms by bot id=7761082242
+2025-06-03 21:06:39 | INFO | logger:emit:13 - Update id=661233826 is handled. Duration 46 ms by bot id=7761082242
+2025-06-03 21:06:40 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:40 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:40 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:40 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:43 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:43 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:43 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90589/500000
+2025-06-03 21:06:43 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:46 | INFO | logger:emit:13 - Update id=661233827 is handled. Duration 62 ms by bot id=7761082242
+2025-06-03 21:06:46 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:46 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:46 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:46 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:49 | INFO | logger:emit:13 - Update id=661233828 is handled. Duration 62 ms by bot id=7761082242
+2025-06-03 21:06:50 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:50 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:50 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90589/500000
+2025-06-03 21:06:50 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:53 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:53 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:53 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90590/500000
+2025-06-03 21:06:53 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:56 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:56 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:56 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90589/500000
+2025-06-03 21:06:56 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:06:59 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:06:59 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:06:59 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:03 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:03 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:03 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:06 | INFO | logger:emit:13 - Update id=661233829 is handled. Duration 78 ms by bot id=7761082242
+2025-06-03 21:07:06 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:06 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:06 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:08 | INFO | logger:emit:13 - Update id=661233830 is handled. Duration 62 ms by bot id=7761082242
+2025-06-03 21:07:09 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:09 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:09 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90587/500000
+2025-06-03 21:07:09 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:11 | INFO | logger:emit:13 - Update id=661233831 is handled. Duration 108 ms by bot id=7761082242
+2025-06-03 21:07:12 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:12 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:12 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90589/500000
+2025-06-03 21:07:12 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:16 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:16 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:16 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90587/500000
+2025-06-03 21:07:16 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:19 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:19 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:19 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:22 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:22 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:22 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:25 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:25 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:25 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:29 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:29 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:29 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:32 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:32 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:32 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:35 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:35 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:35 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:38 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:38 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:38 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:42 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:42 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:42 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:45 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:45 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:45 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:48 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:48 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:48 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:51 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:51 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:51 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:55 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:55 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:55 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:07:58 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:07:58 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:07:58 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:01 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:01 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:01 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:04 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:04 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:04 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:08 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:08 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:08 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90586/500000
+2025-06-03 21:08:08 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:11 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:11 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:11 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90587/500000
+2025-06-03 21:08:11 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:14 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:14 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:14 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90584/500000
+2025-06-03 21:08:14 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:17 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:17 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:17 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:21 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:21 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:21 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:24 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:24 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:24 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90586/500000
+2025-06-03 21:08:24 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:27 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:27 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:27 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90584/500000
+2025-06-03 21:08:27 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:30 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:30 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:30 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:34 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:34 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:34 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:37 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:37 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:37 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:40 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:40 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:40 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:43 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:43 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:43 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90577/500000
+2025-06-03 21:08:43 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:47 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:47 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:47 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:50 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:50 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:50 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:53 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:53 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:53 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:08:56 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:08:56 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:08:56 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:00 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:00 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:00 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:03 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:03 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:03 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:06 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:06 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:06 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:09 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:09 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:09 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:12 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:12 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:12 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:16 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:16 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:16 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:19 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:19 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:19 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:22 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:22 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:22 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:25 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:25 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:25 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:29 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:29 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:29 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90575/500000
+2025-06-03 21:09:29 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:32 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:32 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:32 | INFO | gift_parser:start_gift_parsing_loop:215 - 📝 Updated gift 5782984811920491178: price=350⭐, remaining=90574/500000
+2025-06-03 21:09:32 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:35 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:35 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:35 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:38 | DEBUG | gifts:aio_get_available_gifts:31 - Fetched 12 gifts from API
+2025-06-03 21:09:38 | INFO | gift_parser:start_gift_parsing_loop:185 - 📊 Gifts fetched - Total: 12, Limited: 1, Unlimited: 11 (will be ignored)
+2025-06-03 21:09:38 | INFO | gift_parser:start_gift_parsing_loop:235 - ✅ Database updated with LIMITED gifts only
+2025-06-03 21:09:42 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:09:42 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:09:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:42 | WARNING | logger:emit:13 - Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 7761082242)
+2025-06-03 21:09:43 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:43 | WARNING | logger:emit:13 - Sleep for 1.161088 seconds and try again... (tryings = 1, bot id = 7761082242)
+2025-06-03 21:09:44 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:44 | WARNING | logger:emit:13 - Sleep for 1.553116 seconds and try again... (tryings = 2, bot id = 7761082242)
+2025-06-03 21:09:46 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:46 | WARNING | logger:emit:13 - Sleep for 2.187372 seconds and try again... (tryings = 3, bot id = 7761082242)
+2025-06-03 21:09:48 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:48 | WARNING | logger:emit:13 - Sleep for 2.858370 seconds and try again... (tryings = 4, bot id = 7761082242)
+2025-06-03 21:09:51 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:51 | WARNING | logger:emit:13 - Sleep for 3.625470 seconds and try again... (tryings = 5, bot id = 7761082242)
+2025-06-03 21:09:52 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:09:52 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:09:55 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:55 | WARNING | logger:emit:13 - Sleep for 4.624497 seconds and try again... (tryings = 6, bot id = 7761082242)
+2025-06-03 21:09:59 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:09:59 | WARNING | logger:emit:13 - Sleep for 5.034712 seconds and try again... (tryings = 7, bot id = 7761082242)
+2025-06-03 21:10:02 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:02 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:04 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:04 | WARNING | logger:emit:13 - Sleep for 5.010748 seconds and try again... (tryings = 8, bot id = 7761082242)
+2025-06-03 21:10:10 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:10 | WARNING | logger:emit:13 - Sleep for 5.047280 seconds and try again... (tryings = 9, bot id = 7761082242)
+2025-06-03 21:10:12 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:12 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:15 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:15 | WARNING | logger:emit:13 - Sleep for 4.933458 seconds and try again... (tryings = 10, bot id = 7761082242)
+2025-06-03 21:10:20 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:20 | WARNING | logger:emit:13 - Sleep for 4.966254 seconds and try again... (tryings = 11, bot id = 7761082242)
+2025-06-03 21:10:22 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:22 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:25 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:25 | WARNING | logger:emit:13 - Sleep for 5.028015 seconds and try again... (tryings = 12, bot id = 7761082242)
+2025-06-03 21:10:30 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:30 | WARNING | logger:emit:13 - Sleep for 4.907933 seconds and try again... (tryings = 13, bot id = 7761082242)
+2025-06-03 21:10:32 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:32 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:35 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:35 | WARNING | logger:emit:13 - Sleep for 5.118557 seconds and try again... (tryings = 14, bot id = 7761082242)
+2025-06-03 21:10:40 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:40 | WARNING | logger:emit:13 - Sleep for 4.981519 seconds and try again... (tryings = 15, bot id = 7761082242)
+2025-06-03 21:10:42 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:42 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:45 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:45 | WARNING | logger:emit:13 - Sleep for 5.073372 seconds and try again... (tryings = 16, bot id = 7761082242)
+2025-06-03 21:10:50 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:50 | WARNING | logger:emit:13 - Sleep for 4.988261 seconds and try again... (tryings = 17, bot id = 7761082242)
+2025-06-03 21:10:52 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:10:52 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:10:55 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:10:55 | WARNING | logger:emit:13 - Sleep for 4.978293 seconds and try again... (tryings = 18, bot id = 7761082242)
+2025-06-03 21:11:00 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:00 | WARNING | logger:emit:13 - Sleep for 4.926307 seconds and try again... (tryings = 19, bot id = 7761082242)
+2025-06-03 21:11:02 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:02 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:05 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:05 | WARNING | logger:emit:13 - Sleep for 5.032650 seconds and try again... (tryings = 20, bot id = 7761082242)
+2025-06-03 21:11:10 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:10 | WARNING | logger:emit:13 - Sleep for 4.855287 seconds and try again... (tryings = 21, bot id = 7761082242)
+2025-06-03 21:11:12 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:12 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:15 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:15 | WARNING | logger:emit:13 - Sleep for 5.041197 seconds and try again... (tryings = 22, bot id = 7761082242)
+2025-06-03 21:11:20 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:20 | WARNING | logger:emit:13 - Sleep for 5.017035 seconds and try again... (tryings = 23, bot id = 7761082242)
+2025-06-03 21:11:22 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:22 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:25 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:25 | WARNING | logger:emit:13 - Sleep for 4.960856 seconds and try again... (tryings = 24, bot id = 7761082242)
+2025-06-03 21:11:30 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:30 | WARNING | logger:emit:13 - Sleep for 4.875317 seconds and try again... (tryings = 25, bot id = 7761082242)
+2025-06-03 21:11:32 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:32 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:35 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:35 | WARNING | logger:emit:13 - Sleep for 5.100401 seconds and try again... (tryings = 26, bot id = 7761082242)
+2025-06-03 21:11:40 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:40 | WARNING | logger:emit:13 - Sleep for 4.938661 seconds and try again... (tryings = 27, bot id = 7761082242)
+2025-06-03 21:11:42 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:42 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:45 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:45 | WARNING | logger:emit:13 - Sleep for 4.985131 seconds and try again... (tryings = 28, bot id = 7761082242)
+2025-06-03 21:11:50 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:50 | WARNING | logger:emit:13 - Sleep for 5.053542 seconds and try again... (tryings = 29, bot id = 7761082242)
+2025-06-03 21:11:53 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:11:53 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:11:55 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:11:55 | WARNING | logger:emit:13 - Sleep for 5.008976 seconds and try again... (tryings = 30, bot id = 7761082242)
+2025-06-03 21:12:00 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:00 | WARNING | logger:emit:13 - Sleep for 5.052897 seconds and try again... (tryings = 31, bot id = 7761082242)
+2025-06-03 21:12:03 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:03 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:06 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:06 | WARNING | logger:emit:13 - Sleep for 4.945798 seconds and try again... (tryings = 32, bot id = 7761082242)
+2025-06-03 21:12:11 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:11 | WARNING | logger:emit:13 - Sleep for 4.911947 seconds and try again... (tryings = 33, bot id = 7761082242)
+2025-06-03 21:12:13 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:13 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:16 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:16 | WARNING | logger:emit:13 - Sleep for 5.129587 seconds and try again... (tryings = 34, bot id = 7761082242)
+2025-06-03 21:12:21 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:21 | WARNING | logger:emit:13 - Sleep for 5.064581 seconds and try again... (tryings = 35, bot id = 7761082242)
+2025-06-03 21:12:23 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:23 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:26 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:26 | WARNING | logger:emit:13 - Sleep for 5.037638 seconds and try again... (tryings = 36, bot id = 7761082242)
+2025-06-03 21:12:31 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:31 | WARNING | logger:emit:13 - Sleep for 4.917721 seconds and try again... (tryings = 37, bot id = 7761082242)
+2025-06-03 21:12:33 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:33 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:36 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:36 | WARNING | logger:emit:13 - Sleep for 5.001953 seconds and try again... (tryings = 38, bot id = 7761082242)
+2025-06-03 21:12:41 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:41 | WARNING | logger:emit:13 - Sleep for 5.136251 seconds and try again... (tryings = 39, bot id = 7761082242)
+2025-06-03 21:12:43 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:43 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:46 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:46 | WARNING | logger:emit:13 - Sleep for 4.879882 seconds and try again... (tryings = 40, bot id = 7761082242)
+2025-06-03 21:12:51 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:51 | WARNING | logger:emit:13 - Sleep for 5.004869 seconds and try again... (tryings = 41, bot id = 7761082242)
+2025-06-03 21:12:53 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:12:53 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:12:56 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:12:56 | WARNING | logger:emit:13 - Sleep for 4.968360 seconds and try again... (tryings = 42, bot id = 7761082242)
+2025-06-03 21:13:01 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:01 | WARNING | logger:emit:13 - Sleep for 5.129502 seconds and try again... (tryings = 43, bot id = 7761082242)
+2025-06-03 21:13:03 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:03 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:06 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:06 | WARNING | logger:emit:13 - Sleep for 5.021969 seconds and try again... (tryings = 44, bot id = 7761082242)
+2025-06-03 21:13:11 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:11 | WARNING | logger:emit:13 - Sleep for 4.921579 seconds and try again... (tryings = 45, bot id = 7761082242)
+2025-06-03 21:13:13 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:13 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:16 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:16 | WARNING | logger:emit:13 - Sleep for 5.007530 seconds and try again... (tryings = 46, bot id = 7761082242)
+2025-06-03 21:13:21 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:21 | WARNING | logger:emit:13 - Sleep for 5.110866 seconds and try again... (tryings = 47, bot id = 7761082242)
+2025-06-03 21:13:23 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:23 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:27 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:27 | WARNING | logger:emit:13 - Sleep for 4.977085 seconds and try again... (tryings = 48, bot id = 7761082242)
+2025-06-03 21:13:32 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:32 | WARNING | logger:emit:13 - Sleep for 5.109601 seconds and try again... (tryings = 49, bot id = 7761082242)
+2025-06-03 21:13:33 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:33 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:37 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:37 | WARNING | logger:emit:13 - Sleep for 4.968271 seconds and try again... (tryings = 50, bot id = 7761082242)
+2025-06-03 21:13:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:42 | WARNING | logger:emit:13 - Sleep for 5.058562 seconds and try again... (tryings = 51, bot id = 7761082242)
+2025-06-03 21:13:43 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:43 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:47 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:47 | WARNING | logger:emit:13 - Sleep for 4.710562 seconds and try again... (tryings = 52, bot id = 7761082242)
+2025-06-03 21:13:52 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:52 | WARNING | logger:emit:13 - Sleep for 4.988665 seconds and try again... (tryings = 53, bot id = 7761082242)
+2025-06-03 21:13:53 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:13:53 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:13:57 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:13:57 | WARNING | logger:emit:13 - Sleep for 4.925741 seconds and try again... (tryings = 54, bot id = 7761082242)
+2025-06-03 21:14:02 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:02 | WARNING | logger:emit:13 - Sleep for 4.886460 seconds and try again... (tryings = 55, bot id = 7761082242)
+2025-06-03 21:14:03 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:03 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:07 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:07 | WARNING | logger:emit:13 - Sleep for 4.871728 seconds and try again... (tryings = 56, bot id = 7761082242)
+2025-06-03 21:14:11 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:11 | WARNING | logger:emit:13 - Sleep for 5.049098 seconds and try again... (tryings = 57, bot id = 7761082242)
+2025-06-03 21:14:13 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:13 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:17 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:17 | WARNING | logger:emit:13 - Sleep for 5.024419 seconds and try again... (tryings = 58, bot id = 7761082242)
+2025-06-03 21:14:22 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:22 | WARNING | logger:emit:13 - Sleep for 5.077064 seconds and try again... (tryings = 59, bot id = 7761082242)
+2025-06-03 21:14:23 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:23 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:27 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:27 | WARNING | logger:emit:13 - Sleep for 4.874162 seconds and try again... (tryings = 60, bot id = 7761082242)
+2025-06-03 21:14:32 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:32 | WARNING | logger:emit:13 - Sleep for 4.950719 seconds and try again... (tryings = 61, bot id = 7761082242)
+2025-06-03 21:14:33 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:33 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:37 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:37 | WARNING | logger:emit:13 - Sleep for 4.962352 seconds and try again... (tryings = 62, bot id = 7761082242)
+2025-06-03 21:14:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:42 | WARNING | logger:emit:13 - Sleep for 4.897770 seconds and try again... (tryings = 63, bot id = 7761082242)
+2025-06-03 21:14:43 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:43 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:47 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:47 | WARNING | logger:emit:13 - Sleep for 5.045770 seconds and try again... (tryings = 64, bot id = 7761082242)
+2025-06-03 21:14:52 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:52 | WARNING | logger:emit:13 - Sleep for 4.934986 seconds and try again... (tryings = 65, bot id = 7761082242)
+2025-06-03 21:14:53 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:14:53 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:14:57 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:14:57 | WARNING | logger:emit:13 - Sleep for 4.832089 seconds and try again... (tryings = 66, bot id = 7761082242)
+2025-06-03 21:15:02 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:02 | WARNING | logger:emit:13 - Sleep for 4.993563 seconds and try again... (tryings = 67, bot id = 7761082242)
+2025-06-03 21:15:03 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:03 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:07 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:07 | WARNING | logger:emit:13 - Sleep for 4.876036 seconds and try again... (tryings = 68, bot id = 7761082242)
+2025-06-03 21:15:12 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:12 | WARNING | logger:emit:13 - Sleep for 4.796058 seconds and try again... (tryings = 69, bot id = 7761082242)
+2025-06-03 21:15:13 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:13 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:16 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:16 | WARNING | logger:emit:13 - Sleep for 5.019038 seconds and try again... (tryings = 70, bot id = 7761082242)
+2025-06-03 21:15:21 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:21 | WARNING | logger:emit:13 - Sleep for 5.091163 seconds and try again... (tryings = 71, bot id = 7761082242)
+2025-06-03 21:15:23 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:23 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:27 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:27 | WARNING | logger:emit:13 - Sleep for 5.025930 seconds and try again... (tryings = 72, bot id = 7761082242)
+2025-06-03 21:15:32 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:32 | WARNING | logger:emit:13 - Sleep for 4.812801 seconds and try again... (tryings = 73, bot id = 7761082242)
+2025-06-03 21:15:33 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:33 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:36 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:36 | WARNING | logger:emit:13 - Sleep for 5.160836 seconds and try again... (tryings = 74, bot id = 7761082242)
+2025-06-03 21:15:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:42 | WARNING | logger:emit:13 - Sleep for 5.040798 seconds and try again... (tryings = 75, bot id = 7761082242)
+2025-06-03 21:15:43 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:43 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:47 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:47 | WARNING | logger:emit:13 - Sleep for 5.037320 seconds and try again... (tryings = 76, bot id = 7761082242)
+2025-06-03 21:15:52 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:52 | WARNING | logger:emit:13 - Sleep for 4.875658 seconds and try again... (tryings = 77, bot id = 7761082242)
+2025-06-03 21:15:54 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:15:54 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:15:57 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:15:57 | WARNING | logger:emit:13 - Sleep for 4.903129 seconds and try again... (tryings = 78, bot id = 7761082242)
+2025-06-03 21:16:02 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:02 | WARNING | logger:emit:13 - Sleep for 5.006753 seconds and try again... (tryings = 79, bot id = 7761082242)
+2025-06-03 21:16:04 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:04 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:07 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:07 | WARNING | logger:emit:13 - Sleep for 4.867533 seconds and try again... (tryings = 80, bot id = 7761082242)
+2025-06-03 21:16:12 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:12 | WARNING | logger:emit:13 - Sleep for 5.125580 seconds and try again... (tryings = 81, bot id = 7761082242)
+2025-06-03 21:16:14 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:14 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:17 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:17 | WARNING | logger:emit:13 - Sleep for 4.962685 seconds and try again... (tryings = 82, bot id = 7761082242)
+2025-06-03 21:16:22 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:22 | WARNING | logger:emit:13 - Sleep for 5.045647 seconds and try again... (tryings = 83, bot id = 7761082242)
+2025-06-03 21:16:24 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:24 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:27 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:27 | WARNING | logger:emit:13 - Sleep for 5.257747 seconds and try again... (tryings = 84, bot id = 7761082242)
+2025-06-03 21:16:32 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:32 | WARNING | logger:emit:13 - Sleep for 4.914747 seconds and try again... (tryings = 85, bot id = 7761082242)
+2025-06-03 21:16:34 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:34 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:37 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:37 | WARNING | logger:emit:13 - Sleep for 4.864658 seconds and try again... (tryings = 86, bot id = 7761082242)
+2025-06-03 21:16:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:42 | WARNING | logger:emit:13 - Sleep for 5.018213 seconds and try again... (tryings = 87, bot id = 7761082242)
+2025-06-03 21:16:44 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:44 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:47 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:47 | WARNING | logger:emit:13 - Sleep for 4.948902 seconds and try again... (tryings = 88, bot id = 7761082242)
+2025-06-03 21:16:52 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:52 | WARNING | logger:emit:13 - Sleep for 4.817681 seconds and try again... (tryings = 89, bot id = 7761082242)
+2025-06-03 21:16:54 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:16:54 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:16:57 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:16:57 | WARNING | logger:emit:13 - Sleep for 5.068761 seconds and try again... (tryings = 90, bot id = 7761082242)
+2025-06-03 21:17:02 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:02 | WARNING | logger:emit:13 - Sleep for 4.928735 seconds and try again... (tryings = 91, bot id = 7761082242)
+2025-06-03 21:17:04 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:04 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:07 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:07 | WARNING | logger:emit:13 - Sleep for 5.033520 seconds and try again... (tryings = 92, bot id = 7761082242)
+2025-06-03 21:17:12 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:12 | WARNING | logger:emit:13 - Sleep for 5.047679 seconds and try again... (tryings = 93, bot id = 7761082242)
+2025-06-03 21:17:14 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:14 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:17 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:17 | WARNING | logger:emit:13 - Sleep for 5.093731 seconds and try again... (tryings = 94, bot id = 7761082242)
+2025-06-03 21:17:22 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:22 | WARNING | logger:emit:13 - Sleep for 4.929235 seconds and try again... (tryings = 95, bot id = 7761082242)
+2025-06-03 21:17:24 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:24 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:27 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:27 | WARNING | logger:emit:13 - Sleep for 5.184138 seconds and try again... (tryings = 96, bot id = 7761082242)
+2025-06-03 21:17:33 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:33 | WARNING | logger:emit:13 - Sleep for 4.855063 seconds and try again... (tryings = 97, bot id = 7761082242)
+2025-06-03 21:17:34 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:34 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:38 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:38 | WARNING | logger:emit:13 - Sleep for 4.768069 seconds and try again... (tryings = 98, bot id = 7761082242)
+2025-06-03 21:17:42 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:42 | WARNING | logger:emit:13 - Sleep for 5.171085 seconds and try again... (tryings = 99, bot id = 7761082242)
+2025-06-03 21:17:44 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:44 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:48 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:48 | WARNING | logger:emit:13 - Sleep for 4.910589 seconds and try again... (tryings = 100, bot id = 7761082242)
+2025-06-03 21:17:53 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:53 | WARNING | logger:emit:13 - Sleep for 4.868805 seconds and try again... (tryings = 101, bot id = 7761082242)
+2025-06-03 21:17:54 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:17:54 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:17:57 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:17:57 | WARNING | logger:emit:13 - Sleep for 4.783140 seconds and try again... (tryings = 102, bot id = 7761082242)
+2025-06-03 21:18:02 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:02 | WARNING | logger:emit:13 - Sleep for 5.191102 seconds and try again... (tryings = 103, bot id = 7761082242)
+2025-06-03 21:18:04 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:04 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:07 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:07 | WARNING | logger:emit:13 - Sleep for 4.993226 seconds and try again... (tryings = 104, bot id = 7761082242)
+2025-06-03 21:18:13 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:13 | WARNING | logger:emit:13 - Sleep for 5.151559 seconds and try again... (tryings = 105, bot id = 7761082242)
+2025-06-03 21:18:14 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:14 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:18 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:18 | WARNING | logger:emit:13 - Sleep for 4.952058 seconds and try again... (tryings = 106, bot id = 7761082242)
+2025-06-03 21:18:23 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:23 | WARNING | logger:emit:13 - Sleep for 5.173143 seconds and try again... (tryings = 107, bot id = 7761082242)
+2025-06-03 21:18:24 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:24 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:28 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:28 | WARNING | logger:emit:13 - Sleep for 5.110097 seconds and try again... (tryings = 108, bot id = 7761082242)
+2025-06-03 21:18:33 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:33 | WARNING | logger:emit:13 - Sleep for 4.906736 seconds and try again... (tryings = 109, bot id = 7761082242)
+2025-06-03 21:18:34 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:34 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:38 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:38 | WARNING | logger:emit:13 - Sleep for 4.854544 seconds and try again... (tryings = 110, bot id = 7761082242)
+2025-06-03 21:18:43 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:43 | WARNING | logger:emit:13 - Sleep for 5.042320 seconds and try again... (tryings = 111, bot id = 7761082242)
+2025-06-03 21:18:44 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:44 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:48 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:48 | WARNING | logger:emit:13 - Sleep for 4.979177 seconds and try again... (tryings = 112, bot id = 7761082242)
+2025-06-03 21:18:53 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:53 | WARNING | logger:emit:13 - Sleep for 4.993757 seconds and try again... (tryings = 113, bot id = 7761082242)
+2025-06-03 21:18:54 | ERROR | gifts:aio_get_available_gifts:34 - API response error: {'ok': False, 'error_code': 401, 'description': 'Unauthorized'}
+2025-06-03 21:18:54 | WARNING | gift_parser:start_gift_parsing_loop:176 - Gift list is empty or an error occurred while retrieving data.
+2025-06-03 21:18:58 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:18:58 | WARNING | logger:emit:13 - Sleep for 4.806873 seconds and try again... (tryings = 114, bot id = 7761082242)
+2025-06-03 21:19:03 | ERROR | logger:emit:13 - Failed to fetch updates - TelegramUnauthorizedError: Telegram server says - Unauthorized
+2025-06-03 21:19:03 | WARNING | logger:emit:13 - Sleep for 4.936153 seconds and try again... (tryings = 115, bot id = 7761082242)
+2025-06-03 21:19:04 | INFO | logger:emit:13 - Polling stopped
+2025-06-03 21:19:04 | INFO | logger:emit:13 - Polling stopped for bot @LabAutoBuyBot id=7761082242 - 'Лаборатория АвтоБай подарков'
+2025-06-03 21:19:40 | INFO | main:main:39 - Starting bot...
+2025-06-03 21:19:40 | INFO | main:on_startup:26 - Initializing database...
+2025-06-03 21:19:40 | INFO | main:on_startup:28 - Database initialized successfully
+2025-06-03 21:19:40 | INFO | main:on_startup:31 - Starting gift parsing loop...
+2025-06-03 21:19:40 | ERROR | main:<module>:59 - Bot stopped due to an error: Telegram server says - Unauthorized
+Traceback (most recent call last):
+
+> File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\main.py", line 57, in <module>
+    asyncio.run(main())
+    │       │   └ <function main at 0x000001F50FEEA0C0>
+    │       └ <function run at 0x000001F5067C9260>
+    └ <module 'asyncio' from 'C:\\Users\\jabsw\\AppData\\Local\\Programs\\Python\\Python311\\Lib\\asyncio\\__init__.py'>
+
+  File "C:\Users\jabsw\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 190, in run
+    return runner.run(main)
+           │      │   └ <coroutine object main at 0x000001F50FC84930>
+           │      └ <function Runner.run at 0x000001F506839440>
+           └ <asyncio.runners.Runner object at 0x000001F50FEF2B10>
+  File "C:\Users\jabsw\AppData\Local\Programs\Python\Python311\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           │    │                        └ <Task finished name='Task-1' coro=<main() done, defined at C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\main.py:35> exception...
+           │    └ None
+           └ <asyncio.runners.Runner object at 0x000001F50FEF2B10>
+  File "C:\Users\jabsw\AppData\Local\Programs\Python\Python311\Lib\asyncio\base_events.py", line 650, in run_until_complete
+    return future.result()
+           │      └ <method 'result' of '_asyncio.Task' objects>
+           └ <Task finished name='Task-1' coro=<main() done, defined at C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\main.py:35> exception...
+
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\main.py", line 51, in main
+    await bot.delete_webhook(drop_pending_updates=True)
+          │   └ <function Bot.delete_webhook at 0x000001F50F1F6160>
+          └ <aiogram.client.bot.Bot object at 0x000001F50489C290>
+
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\venv\Lib\site-packages\aiogram\client\bot.py", line 1206, in delete_webhook
+    return await self(call, request_timeout=request_timeout)
+                 │    │                     └ None
+                 │    └ DeleteWebhook(drop_pending_updates=True)
+                 └ <aiogram.client.bot.Bot object at 0x000001F50489C290>
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\venv\Lib\site-packages\aiogram\client\bot.py", line 453, in __call__
+    return await self.session(self, method, timeout=request_timeout)
+                 │    │       │     │               └ None
+                 │    │       │     └ DeleteWebhook(drop_pending_updates=True)
+                 │    │       └ <aiogram.client.bot.Bot object at 0x000001F50489C290>
+                 │    └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x000001F50698B050>
+                 └ <aiogram.client.bot.Bot object at 0x000001F50489C290>
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\venv\Lib\site-packages\aiogram\client\session\base.py", line 254, in __call__
+    return cast(TelegramType, await middleware(bot, method))
+           │    │                   │          │    └ DeleteWebhook(drop_pending_updates=True)
+           │    │                   │          └ <aiogram.client.bot.Bot object at 0x000001F50489C290>
+           │    │                   └ functools.partial(<bound method AiohttpSession.make_request of <aiogram.client.session.aiohttp.AiohttpSession object at 0x000...
+           │    └ ~TelegramType
+           └ <function cast at 0x000001F506818E00>
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\venv\Lib\site-packages\aiogram\client\session\aiohttp.py", line 185, in make_request
+    response = self.check_response(
+               │    └ <function BaseSession.check_response at 0x000001F50F1D7420>
+               └ <aiogram.client.session.aiohttp.AiohttpSession object at 0x000001F50698B050>
+  File "C:\Users\jabsw\vscodeProjects\TgGiftBuyerBot\venv\Lib\site-packages\aiogram\client\session\base.py", line 126, in check_response
+    raise TelegramUnauthorizedError(method=method, message=description)
+          │                                │               └ 'Unauthorized'
+          │                                └ DeleteWebhook(drop_pending_updates=True)
+          └ <class 'aiogram.exceptions.TelegramUnauthorizedError'>
+
+aiogram.exceptions.TelegramUnauthorizedError: Telegram server says - Unauthorized
