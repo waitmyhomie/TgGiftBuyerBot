@@ -25,7 +25,7 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
     1. Проверяет права администратора
     2. Находит транзакцию по ID
     3. Проверяет, что транзакция не была уже возвращена
-    4. Возвращает звезды на баланс пользователя
+    4. Возвращает звезды через Telegram API
     5. Создает запись о возврате
     """
     try:
@@ -98,46 +98,73 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
             old_balance = user.balance
             old_transaction_status = transaction.status
 
-            # Выполняем возврат: всегда добавляем звезды на баланс пользователя
-            user.balance += refund_amount
-            transaction.status = "refunded"
-
-            # Инициируем возврат через Telegram API
+            # ИСПРАВЛЕНИЕ: Сначала пытаемся сделать возврат через Telegram API
+            # НЕ добавляем звезды в БД сразу, чтобы избежать двойного начисления
+            refund_success = False
+            refund_method = "Telegram API"
+            
             try:
+                # Пробуем вернуть через Telegram API
                 await message.bot(RefundStarPayment(
                     user_id=user.user_id,
                     telegram_payment_charge_id=transaction.telegram_payment_charge_id
                 ))
-                log.info(f"Refund request sent to Telegram for transaction {transaction_id}")
+                refund_success = True
+                log.info(f"✅ Refund via Telegram API successful for transaction {transaction_id}")
             except Exception as e:
-                log.error(f"Failed to send refund request to Telegram for transaction {transaction_id}: {e}")
-                await message.reply("⚠️ Возврат средств на баланс Telegram не удалось инициировать. Обратитесь к администратору.")
-                # Продолжаем процесс, так как внутренний баланс уже скорректирован
+                log.error(f"❌ Failed to refund via Telegram API for transaction {transaction_id}: {e}")
+                
+                # FALLBACK: Если не удалось через API, добавляем на внутренний баланс
+                # Это может произойти если прошло слишком много времени с момента платежа
+                user.balance += refund_amount
+                refund_success = True
+                refund_method = "Internal balance"
+                log.info(f"✅ Refund added to internal balance for transaction {transaction_id}")
+
+            if not refund_success:
+                await message.reply("❌ Не удалось выполнить возврат. Обратитесь к разработчику.")
+                return
+
+            # Меняем статус транзакции
+            transaction.status = "refunded"
 
             # Создаем новую транзакцию для записи возврата
-            # Сумма возврата всегда положительна, так как звезды возвращаются пользователю
             refund_transaction = Transaction(
                 user_id=user.user_id,
-                amount=refund_amount,
+                amount=refund_amount,  # Положительная сумма для возврата
                 telegram_payment_charge_id=f"refund_{transaction_id}_{datetime.now().timestamp()}",
                 status="completed",
                 time=datetime.now().isoformat(),
-                payload=f"refund_for_transaction_{transaction_id}_by_admin_{admin_user.user_id}"
+                payload=f"refund_for_transaction_{transaction_id}_by_admin_{admin_user.user_id}_method_{refund_method.replace(' ', '_')}"
             )
             db.add(refund_transaction)
             
             # Сохраняем изменения
             db.commit()
+            db.refresh(refund_transaction)
             
             # Формируем отчет
             report = (
                 f"✅ Возврат успешно выполнен!\n\n"
                 f"📋 **Детали возврата:**\n"
                 f"• ID транзакции: #{transaction_id}\n"
-                f"• Сумма возврата: +{refund_amount}⭐\n"
+                f"• Сумма возврата: {refund_amount}⭐\n"
                 f"• Получатель: {user.username} (ID: {user.user_id})\n"
-                f"• Старый баланс: {old_balance}⭐\n"
-                f"• Новый баланс: {user.balance}⭐\n"
+                f"• Метод возврата: {refund_method}\n"
+            )
+            
+            if refund_method == "Internal balance":
+                report += (
+                    f"• Старый баланс: {old_balance}⭐\n"
+                    f"• Новый баланс: {user.balance}⭐\n"
+                )
+            else:
+                report += (
+                    f"• Текущий баланс: {user.balance}⭐\n"
+                    f"• ℹ️ Звезды возвращены в Telegram\n"
+                )
+            
+            report += (
                 f"• ID транзакции возврата: #{refund_transaction.id}\n"
                 f"• Время возврата: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}"
             )
@@ -148,11 +175,25 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
             try:
                 user_notification = (
                     f"💰 Вам был выполнен возврат средств!\n\n"
-                    f"• Сумма: +{refund_amount}⭐\n"
-                    f"• Ваш новый баланс: {user.balance}⭐\n"
+                    f"• Сумма: {refund_amount}⭐\n"
+                )
+                
+                if refund_method == "Telegram API":
+                    user_notification += (
+                        f"• ✅ Звезды возвращены в ваш Telegram\n"
+                        f"• Текущий баланс в боте: {user.balance}⭐\n"
+                    )
+                else:
+                    user_notification += (
+                        f"• ✅ Звезды добавлены на внутренний баланс\n"
+                        f"• Новый баланс: {user.balance}⭐\n"
+                    )
+                
+                user_notification += (
                     f"• Причина: возврат транзакции #{transaction_id}\n"
                     f"• Администратор: {admin_user.username}"
                 )
+                
                 await message.bot.send_message(
                     user.user_id,
                     user_notification

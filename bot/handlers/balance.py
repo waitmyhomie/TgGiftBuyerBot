@@ -219,7 +219,7 @@ async def process_deposit_payment(message: types.Message, db_session, payment_in
         - Parses payment payload
         - Updates user balance
         - Creates transaction record
-        - Sends confirmation message
+        - Sends confirmation message with transaction ID
 
     On Error:
         - Logs detailed error
@@ -248,10 +248,19 @@ async def process_deposit_payment(message: types.Message, db_session, payment_in
             )
             db.add(transaction)
             db.commit()
+            
+            # Обновляем объект транзакции чтобы получить ID
+            db.refresh(transaction)
 
+        # ИСПРАВЛЕНИЕ: Показываем ID транзакции при пополнении
         await message.reply(
-            f"Deposit of {amount}⭐️ successfully credited to your account.",
-            reply_markup=main_menu()
+            f"✅ Deposit successful!\n\n"
+            f"• Amount: {amount}⭐️\n"
+            f"• New balance: {user.balance}⭐️\n"
+            f"• Transaction ID: #{transaction.id}\n"
+            f"• Payment ID: `{payment_info.telegram_payment_charge_id}`",
+            reply_markup=main_menu(),
+            parse_mode="Markdown"
         )
     except Exception as e:
         log.error(f"Deposit processing error: {e}")
