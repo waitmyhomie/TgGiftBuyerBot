@@ -25,7 +25,7 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
     1. Проверяет права администратора
     2. Находит транзакцию по ID
     3. Проверяет, что транзакция не была уже возвращена
-    4. Возвращает звезды через Telegram API
+    4. Возвращает звезды через Telegram API (для депозитов) или на баланс (для покупок)
     5. Создает запись о возврате
     """
     try:
@@ -98,28 +98,45 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
             old_balance = user.balance
             old_transaction_status = transaction.status
 
-            # ИСПРАВЛЕНИЕ: Сначала пытаемся сделать возврат через Telegram API
-            # НЕ добавляем звезды в БД сразу, чтобы избежать двойного начисления
+            # ИСПРАВЛЕНИЕ: Обрабатываем возврат правильно
             refund_success = False
             refund_method = "Telegram API"
             
+            # Проверяем тип транзакции
+            is_deposit = transaction.payload and "deposit" in transaction.payload.lower()
+            is_purchase = transaction.amount < 0  # Покупки имеют отрицательную сумму
+            
             try:
-                # Пробуем вернуть через Telegram API
-                await message.bot(RefundStarPayment(
-                    user_id=user.user_id,
-                    telegram_payment_charge_id=transaction.telegram_payment_charge_id
-                ))
-                refund_success = True
-                log.info(f"✅ Refund via Telegram API successful for transaction {transaction_id}")
+                # Пробуем вернуть через Telegram API (только для депозитов)
+                if is_deposit:
+                    await message.bot(RefundStarPayment(
+                        user_id=user.user_id,
+                        telegram_payment_charge_id=transaction.telegram_payment_charge_id
+                    ))
+                    # При успешном возврате через API уменьшаем баланс
+                    user.balance -= refund_amount
+                    refund_success = True
+                    log.info(f"✅ Refund via Telegram API successful for transaction {transaction_id}")
+                else:
+                    # Для покупок просто возвращаем на внутренний баланс
+                    user.balance += refund_amount
+                    refund_success = True
+                    refund_method = "Internal balance"
+                    log.info(f"✅ Purchase refunded to internal balance for transaction {transaction_id}")
+                    
             except Exception as e:
                 log.error(f"❌ Failed to refund via Telegram API for transaction {transaction_id}: {e}")
                 
-                # FALLBACK: Если не удалось через API, добавляем на внутренний баланс
-                # Это может произойти если прошло слишком много времени с момента платежа
-                user.balance += refund_amount
-                refund_success = True
-                refund_method = "Internal balance"
-                log.info(f"✅ Refund added to internal balance for transaction {transaction_id}")
+                # FALLBACK: Если не удалось через API, НЕ меняем баланс для депозитов
+                # (так как звезды не вернулись пользователю)
+                if is_deposit:
+                    refund_success = False
+                    await message.reply(
+                        "❌ Не удалось выполнить возврат через Telegram. "
+                        "Возможно, прошло слишком много времени с момента платежа. "
+                        "Обратитесь к разработчику."
+                    )
+                    return
 
             if not refund_success:
                 await message.reply("❌ Не удалось выполнить возврат. Обратитесь к разработчику.")
@@ -129,9 +146,16 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
             transaction.status = "refunded"
 
             # Создаем новую транзакцию для записи возврата
+            # Для депозитов - отрицательная сумма (т.к. уменьшаем баланс)
+            # Для покупок - положительная (т.к. увеличиваем баланс)
+            if refund_method == "Telegram API":
+                refund_transaction_amount = -refund_amount  # Отрицательная для депозитов
+            else:
+                refund_transaction_amount = refund_amount   # Положительная для покупок
+                
             refund_transaction = Transaction(
                 user_id=user.user_id,
-                amount=refund_amount,  # Положительная сумма для возврата
+                amount=refund_transaction_amount,
                 telegram_payment_charge_id=f"refund_{transaction_id}_{datetime.now().timestamp()}",
                 status="completed",
                 time=datetime.now().isoformat(),
@@ -151,18 +175,12 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
                 f"• Сумма возврата: {refund_amount}⭐\n"
                 f"• Получатель: {user.username} (ID: {user.user_id})\n"
                 f"• Метод возврата: {refund_method}\n"
+                f"• Старый баланс: {old_balance}⭐\n"
+                f"• Новый баланс: {user.balance}⭐\n"
             )
             
-            if refund_method == "Internal balance":
-                report += (
-                    f"• Старый баланс: {old_balance}⭐\n"
-                    f"• Новый баланс: {user.balance}⭐\n"
-                )
-            else:
-                report += (
-                    f"• Текущий баланс: {user.balance}⭐\n"
-                    f"• ℹ️ Звезды возвращены в Telegram\n"
-                )
+            if refund_method == "Telegram API":
+                report += f"• ℹ️ Звезды возвращены в Telegram\n"
             
             report += (
                 f"• ID транзакции возврата: #{refund_transaction.id}\n"
@@ -176,11 +194,13 @@ async def refund_stars_command(message: types.Message, command: CommandObject, d
                 user_notification = (
                     f"💰 Вам был выполнен возврат средств!\n\n"
                     f"• Сумма: {refund_amount}⭐\n"
+                    f"• Метод: {refund_method}\n"
                 )
                 
                 if refund_method == "Telegram API":
                     user_notification += (
                         f"• ✅ Звезды возвращены в ваш Telegram\n"
+                        f"• Баланс в боте уменьшен на {refund_amount}⭐\n"
                         f"• Текущий баланс в боте: {user.balance}⭐\n"
                     )
                 else:
@@ -277,7 +297,11 @@ async def list_transactions_command(message: types.Message, command: CommandObje
                 
                 if trans.payload and "refund" in trans.payload:
                     trans_type = "💰 Возврат"
-                    amount_str = f"+{abs(trans.amount)}⭐"
+                    # Показываем корректно для разных типов возвратов
+                    if trans.amount < 0:
+                        amount_str = f"{trans.amount}⭐ (вычтено из баланса)"
+                    else:
+                        amount_str = f"+{abs(trans.amount)}⭐"
                 
                 # Форматируем время
                 try:
