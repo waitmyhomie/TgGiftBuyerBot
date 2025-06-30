@@ -162,22 +162,26 @@ async def process_autobuy_for_user(db, gifts_api, user, settings, new_gifts):
 
 async def start_gift_parsing_loop():
     """
-    Continuously parse new gifts and automatically process purchases for eligible users.
-    FILTERS OUT unlimited gifts.
+    Gift parsing loop - ONLY FOR OWNER
     """
+    OWNER_ID = 1487757625  # Ваш ID
+    
     gifts_api = GiftsApi()
     session_timeout = aiohttp.ClientTimeout(total=60)
+    
+    log.info(f"🔐 Starting gift parser in PRIVATE mode for owner ID: {OWNER_ID}")
+    
     async with aiohttp.ClientSession(timeout=session_timeout) as session:
         while True:
             try:
-                # Retrieve the list of available gifts via API
+                # Получаем подарки
                 gifts = await gifts_api.aio_get_available_gifts(session)
                 if not gifts:
-                    log.warning("Gift list is empty or an error occurred while retrieving data.")
+                    log.warning("Gift list is empty")
                     await asyncio.sleep(10)
                     continue
 
-                # Статистика по подаркам
+                # Статистика
                 total_gifts = len(gifts)
                 unlimited_gifts = [g for g in gifts if g.get('total_count') is None or g.get('remaining_count') is None]
                 limited_gifts = [g for g in gifts if g.get('total_count') is not None and g.get('remaining_count') is not None]
@@ -185,14 +189,12 @@ async def start_gift_parsing_loop():
                 log.info(
                     f"📊 Gifts fetched - Total: {total_gifts}, "
                     f"Limited: {len(limited_gifts)}, "
-                    f"Unlimited: {len(unlimited_gifts)} (will be ignored)"
+                    f"Unlimited: {len(unlimited_gifts)} (ignored)"
                 )
 
                 with get_db_session() as db:
-                    # Update or create gift records in the database
-                    # Обрабатываем ТОЛЬКО лимитированные подарки
+                    # Обновляем базу подарков (только лимитированные)
                     for gift in gifts:
-                        # Пропускаем unlimited подарки
                         if gift.get('total_count') is None or gift.get('remaining_count') is None:
                             continue
                             
@@ -200,6 +202,7 @@ async def start_gift_parsing_loop():
                             Gift.gift_id == gift['id']).first()
                             
                         if existing_gift:
+                            # Обновляем существующий
                             updated = False
                             if existing_gift.price != gift.get('star_count', 0):
                                 existing_gift.price = gift.get('star_count', 0)
@@ -212,12 +215,9 @@ async def start_gift_parsing_loop():
                                 updated = True
 
                             if updated:
-                                log.info(
-                                    f"📝 Updated gift {existing_gift.gift_id}: "
-                                    f"price={existing_gift.price}⭐, "
-                                    f"remaining={existing_gift.remaining_count}/{existing_gift.total_count}"
-                                )
+                                log.debug(f"Updated gift {existing_gift.gift_id}")
                         else:
+                            # Добавляем новый
                             new_gift = Gift(
                                 gift_id=gift['id'],
                                 price=gift.get('star_count', 0),
@@ -226,57 +226,62 @@ async def start_gift_parsing_loop():
                                 is_new=True
                             )
                             db.add(new_gift)
-                            log.info(
-                                f"🆕 Added new LIMITED gift: {new_gift.gift_id} "
-                                f"({new_gift.price}⭐, {new_gift.remaining_count}/{new_gift.total_count})"
-                            )
+                            log.info(f"🆕 New limited gift: {new_gift.gift_id}")
 
                     db.commit()
-                    log.info("✅ Database updated with LIMITED gifts only")
 
-                    # Retrieve users with auto-purchase enabled
-                    auto_buy_users = db.query(AutoBuySettings).filter(
+                    # ВАЖНО: Обрабатываем ТОЛЬКО владельца
+                    owner_settings = db.query(AutoBuySettings).filter(
+                        AutoBuySettings.user_id == OWNER_ID,
                         AutoBuySettings.status == "enabled"
-                    ).all()
+                    ).first()
                     
-                    if auto_buy_users:
-                        log.info(f"👥 Found {len(auto_buy_users)} users with autobuy enabled")
+                    if not owner_settings:
+                        log.debug("Owner autobuy is disabled")
+                        await asyncio.sleep(3)
+                        continue
                     
-                    # Process each user
-                    for settings in auto_buy_users:
-                        user = db.query(User).filter(User.user_id == settings.user_id).first()
-                        if not user or user.balance < 1:
-                            continue
-                        
-                        # Используем cycles как множитель проходов
-                        total_purchased_all_cycles = 0
-                        
-                        for cycle in range(settings.cycles):
-                            if user.balance < 1:
-                                break
-                                
-                            log.info(f"🔄 Цикл {cycle + 1}/{settings.cycles} для пользователя {user.user_id}")
+                    # Получаем владельца
+                    owner = db.query(User).filter(User.user_id == OWNER_ID).first()
+                    if not owner or owner.balance < 1:
+                        log.debug("Owner not found or no balance")
+                        await asyncio.sleep(3)
+                        continue
+                    
+                    log.info(f"🤖 Processing autobuy for owner. Balance: {owner.balance}⭐")
+                    
+                    # Обрабатываем циклы
+                    total_purchased = 0
+                    
+                    for cycle in range(owner_settings.cycles):
+                        if owner.balance < 1:
+                            break
                             
-                            # Обновляем список новых подарков
-                            current_new_gifts = db.query(Gift).filter(Gift.is_new == 1).all()
-                            
-                            if not current_new_gifts:
-                                break
-                                
-                            purchased = await process_autobuy_for_user(db, gifts_api, user, settings, current_new_gifts)
-                            total_purchased_all_cycles += purchased
-                            
-                            if purchased == 0:
-                                break  # Больше нечего покупать
+                        log.info(f"🔄 Cycle {cycle + 1}/{owner_settings.cycles}")
                         
-                        if total_purchased_all_cycles > 0:
-                            log.info(f"🎯 Всего куплено за {settings.cycles} циклов: {total_purchased_all_cycles} подарков")
+                        # Получаем новые подарки
+                        new_gifts = db.query(Gift).filter(Gift.is_new == 1).all()
+                        
+                        if not new_gifts:
+                            break
+                            
+                        purchased = await process_autobuy_for_user(
+                            db, gifts_api, owner, owner_settings, new_gifts
+                        )
+                        total_purchased += purchased
+                        
+                        if purchased == 0:
+                            break
+                    
+                    if total_purchased > 0:
+                        log.info(f"✅ Owner purchased {total_purchased} gifts")
 
-                    # Reset the 'is_new' flag after processing new gifts
+                    # Сбрасываем флаг новых подарков
                     db.query(Gift).filter(Gift.is_new == 1).update({"is_new": 0})
                     db.commit()
 
                 await asyncio.sleep(3)
+                
             except Exception as e:
-                log.error(f"❌ Error in gift parsing process: {e}")
+                log.error(f"❌ Error in gift parsing: {e}")
                 await asyncio.sleep(3)

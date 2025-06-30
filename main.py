@@ -10,6 +10,7 @@ from db import init_db
 from utils.logger import log
 from utils.gift_parser import start_gift_parsing_loop
 import os
+from bot.middlewares.owner_only_middleware import OwnerOnlyMiddleware
 
 # Load configuration
 config = load_config()
@@ -42,7 +43,8 @@ async def main():
 
     await on_startup()
 
-    dp.update.middleware(DBSessionMiddleware())
+    dp.update.middleware(OwnerOnlyMiddleware())  # Первым!
+    dp.update.middleware(DBSessionMiddleware())   # Вторым!
 
     # Register handlers
     register_handlers(dp)

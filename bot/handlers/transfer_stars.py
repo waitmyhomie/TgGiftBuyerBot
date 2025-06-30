@@ -11,7 +11,7 @@ router = Router()
 
 # ⚠️ ВАЖНО: Замените на ваш Telegram ID
 # Узнать свой ID можно у @userinfobot
-OWNER_ID = 1487757625  # <-- ИЗМЕНИТЕ ЭТО!
+OWNER_ID = 1487757625   # <-- ИЗМЕНИТЕ ЭТО!
 
 
 @router.message(Command(commands=["transfer"]))
